@@ -1,12 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import daisyui from "daisyui";
 
-// https://vite.dev/config/
+// ✅ Tailwind + DaisyUI embedded into Vite
 export default defineConfig({
-  plugins: [react(),
-    
-     
-    
+  plugins: [
+    react(),
+    tailwindcss({
+      config: {
+        plugins: [daisyui],
+        theme: {
+          extend: {},
+        },
+      },
+    }),
   ],
   build: {
     outDir: "dist"
@@ -15,4 +23,5 @@ export default defineConfig({
   daisyui:{
     themes:["light", "dark", "cupcake"]
   },
-})
+ 
+});
