@@ -2,4 +2,4 @@
 
 @config "../tailwind.config.js";
 
-@plugin "daisyui";
+@import "daisyui";
