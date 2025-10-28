@@ -6,7 +6,11 @@ export default defineConfig({
   plugins: [react(),
      tailwindcss(),
      
+    
   ],
+  build: {
+    outDir: "dist"
+  },
   daisyui:{
     themes:["light", "dark", "cupcake"]
   },
