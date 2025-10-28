@@ -4,17 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf frontend/node_modules/.vite-temp",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "npm run start --prefix backend"
-  },
-  "engines": {
-    "node": "22.x"
+    "start":"npm run start --prefix backend"
+
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "rimraf": "^6.0.1"
-  }
+  "license": "ISC"
 }
